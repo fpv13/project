@@ -18,6 +18,7 @@ public class test {
         }
         System.out.println("Ostatok za 3 mesyaca: "+sum+" (((Prixodite ebat' esche , rad'i vas naebat')))");
         System.out.println("Change Repository test");
+        System.out.println("Change Branch v2 test");
         }
         }
 
