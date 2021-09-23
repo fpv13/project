@@ -17,6 +17,7 @@ public class test {
             amount=sum;
         }
         System.out.println("Ostatok za 3 mesyaca: "+sum+" (((Prixodite ebat' esche , rad'i vas naebat')))");
+        System.out.println("Change Repository test");
         }
         }
 
