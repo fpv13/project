@@ -15,7 +15,7 @@ public class triangleArray2 {
                 System.out.println();
 
             }
-
+            System.out.println("ALL GOOD i change email");
         }
     }
 
