@@ -13,8 +13,8 @@ public class MethodReturnOperator {
 
         //напишите тут ваш код
         public static long ninthDegree(long b){
-            long res =cube(b)*cube(b);
-        return res;
+
+        return cube(cube(b));
     }
     }
 
