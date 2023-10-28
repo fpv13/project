@@ -20,22 +20,28 @@ package CollectionJava;
 
         public static void main(String[] args) {
             initEmployees();
-//            waitingEmployees.set(0, null);
-            System.out.println("WAIT "+waitingEmployees.get(0));
-            System.out.println("LOADING....");
-            paySalary(waitingEmployees.get(0));
+            for(int i = 0;i < waitingEmployees.size();i++){
+                String s = waitingEmployees.get(i);
+                System.out.println("#"+i+"___"+s+"___in_waitinglist___");
+
+                paySalary(waitingEmployees.get(i));
+
+                System.out.println(s+"___set___"+waitingEmployees.get(i)+"___in_waitinglist___");
+                System.out.println("_______________________________");
+            }
+            System.out.println("Alrady pay");
+            for(int i = 0;i < alreadyGotSalaryEmployees.size();i++){
+                System.out.println("___________");
+
+                System.out.println(alreadyGotSalaryEmployees.get(i));
+            }
         }
 
         public static void paySalary(String name) {
             //напишите тут ваш код
-            if(name.equals(null)){
-             name=null;
-            }
-            else {
-                alreadyGotSalaryEmployees.add(0,name);
-                System.out.println("PAYED "+alreadyGotSalaryEmployees.get(0));
-                waitingEmployees.set(0,null);
-                System.out.println("WAIT "+waitingEmployees.get(0));
+            if (waitingEmployees.contains(name)) {
+                alreadyGotSalaryEmployees.add(name);
+                waitingEmployees.set(waitingEmployees.indexOf(name), null);
             }
         }
     }
